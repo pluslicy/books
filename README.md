@@ -19,3 +19,8 @@
 
 [demo地址](https://github.com/pluslicy/react_demos.git)
 
+###小额赞助
+
+您的支持，使得作者无所顾忌的分享技术
+
+<img src='http://134.175.154.93/assets/images/zhifubao.jpg' width='200'  div align=left>
