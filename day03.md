@@ -1,47 +1,53 @@
-# day03 组件
+# day03 深入组件
 
-## 1. 组件定义
+## 1.局部状态
 
-- 函数定义
-
-  该函数接收一个单一的props对象并返回一个React元素
-
-  ```jsx
-  function Welcome(props) {
-    return <h1>Hello, {props.name}</h1>;
-  }
-  ```
-
-- 类定义（ES6）
-
-  使用ES6中的语法定义一个组件类
-
-  ```jsx
-  class Welcome extends React.Component {
-    render() {
-      return <h1>Hello, {this.props.name}</h1>;
-    }
-  }
-  ```
-
-
-
-## 2. 组件渲染
-
-通过函数ReactDOM.render() 将Weblcome组件渲染到id为root的元素上
+在类构造函数来初始化状态
 
 ```jsx
-ReactDOM.render(
-  <Welcome name="Sara" />,
-  document.getElementById('root')
-);
+class MyHeader extends React.Component{
+  // 构造函数，定义state,相当于vue中data
+  constructor(props){
+    super(props)
+    // 定义组件实例自身变量
+    this.state = {
+      user:{
+        username:'terry'
+      }
+    }
+  }
+
+  render(){
+    let user = this.state.user;
+    return <h2>欢迎您{user.username}</h2>
+  }
+}
 ```
 
-如上代码发生了如下一些事情
 
-1. 我们对`<Welcome name="Sara" />`元素调用了`ReactDOM.render()`方法。
-2. React将`{name: 'Sara'}`作为props传入并调用`Welcome`组件。
-3. `Welcome`组件将`<h1>Hello, Sara</h1>`元素作为结果返回。
-4. React DOM将DOM更新为`<h1>Hello, Sara</h1>`。
-5. 当name发生变化的时候Welcome组件又会重新渲染
 
+## 2. 生命周期钩子
+
+- componentWillMount
+
+  在组件将要被挂载前调用
+
+- **componentDidMount**
+
+  在组件被挂载之后立即调用，可以进行初始化网络请求，如果调用setState，然后可以再次渲染，但是这次渲染会发生在浏览器更新屏幕之前，用户不会发现中间状态。
+
+- componentWillReceiveProps 【UNSAFE_componentWillReceiveProps】
+
+- shouldComponentUpdate
+
+- componentWillUpdate【UNSAFE_componentWillUpdate】
+
+  组件将要被更新
+
+- componentDidUpdate
+
+  组件被更新
+
+- componentWillUnmount
+
+  在组件将要被卸载的时候调用

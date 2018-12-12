@@ -69,7 +69,7 @@ webVR是VR技术在浏览器的实现。
 <head>
 	<meta charset="UTF-8">
 	<title>hello world</title>
-	<!-- 导入react/bebel -->
+	<!-- 导入react -->
 	<script src="https://cdn.bootcss.com/react/16.6.0/umd/react.development.js"></script>
 	<!-- 导入react-dom -->
 	<script src="https://cdn.bootcss.com/react-dom/16.6.0/umd/react-dom.development.js"></script>
