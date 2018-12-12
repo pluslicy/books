@@ -46,7 +46,7 @@
 5. 语法
   index.js
 
-  ```
+  ```javascript
   	// 将组件App渲染到id为root的元素内
   	ReactDOM.render(
   		<App/>,
@@ -57,7 +57,7 @@
   App.js
   ​	组件介绍
 
-  ```
+  ```javascript
   import React, { Component } from 'react';
   class App extends Component{
   	constructor(props){

@@ -63,7 +63,7 @@ webVR是VR技术在浏览器的实现。
 
 ##3. 安装
 ###3.1 script导入
-```
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,7 +90,7 @@ webVR是VR技术在浏览器的实现。
 
 ###3.2 create-react-app
 
-```
+```shell
 # 安装node，并且node版本应该满足 Node >= 6 and npm >= 5.2 
 $ node -v
 	v10.14.1
