@@ -28,6 +28,8 @@ class MyHeader extends React.Component{
 
 ## 2. 生命周期钩子
 
+![](https://raw.githubusercontent.com/pluslicy/react_demos/master/assets/images/react_lifecycle.png)
+
 - componentWillMount
 
   在组件将要被挂载前调用
