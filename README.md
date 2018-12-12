@@ -1,13 +1,3 @@
-# 使用
-
-1. 克隆
-
-   $ git clone https://github.com/pluslicy/books.git
-
-2. 通过Typora打开
-
-
-
 # 内容大纲
 
 1. 介绍

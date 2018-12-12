@@ -103,6 +103,35 @@ $ cd my-app/
 $ npm start
 ```
 ---
+
+
+## 4. gitbook应用
+
+gitbook应用
+
+- gitbook安装
+
+  ```shell
+  $ npm install gitbook-cli -g
+  ```
+
+- gitbook使用
+
+  ```shell
+  # 初始化
+  $ mkdir books
+  $ cd books
+  $ gitbook init
+  # 启动
+  $ gitbook serve --port 8080 --no-live
+  # 将gitbook serve放到后台
+  $ nohup gitbook serve --port 8080 --no-live &
+  # 关闭后台进程
+  $ ps -ef | grep gitbook
+  $ kill -9 1234 	#1234表示进程号
+  ```
+
+
 参考文档：
 
 [课堂视频](https://pan.baidu.com/s/1Pas5OsHyeXCdzMi9TfGriQ)提取码: cj2c

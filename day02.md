@@ -178,6 +178,30 @@ const element = (
   <MyComponent foo={...obj} />
   ```
 
+- 设置默认值
+
+  ```jsx
+  class MyDiv extends React.Component{ 
+    constructor(props){
+      super(props);
+    }
+    render(){
+      return (
+        <div>hello div,{this.props.name}</div>
+      )
+    }
+  }
+  //设置默认值
+  MyDiv.defaultProps = {
+    name:'terry'
+  }
+  
+  ReactDOM.render(
+    <MyDiv name='jacky'/>,
+    document.getElementById('app')
+  );
+  ```
+
 
 ### 2.6 JSX子元素
 
