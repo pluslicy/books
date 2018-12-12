@@ -112,5 +112,46 @@ class MyComponent extends React.Component{
 
 
 
+### 3.4 传递参数
+
+如果想要传递参数给事件处理函数，需要在事件绑定的时候调用bind方法，然后将this作为第一个实参，其他的参数可以自定义。但是要注意，在事件处理函数中，第一个参数为你绑定的第二个形参，... ，最后一个参数为event对象
+
+```javascript
+class MyComponent extends React.Component{
+  handleClick = (param,event)=>{
+    console.log(event);
+    console.log(this);
+    console.log(param);
+  }
+  render(){
+    return (
+      <div onClick={this.handleClick.bind(this,1)}>hello MyComponent</div>
+    )
+  }
+}
+```
+
+当然，还有一种方式也可以传递参数
+
+```
+class MyComponent extends React.Component{
+  
+  handleClick = (event,p1,p2)=>{
+    console.log('event',event);
+    console.log('p1',p1);
+    console.log('p2',p2);
+    console.log('this',this);
+  }
+  render(){
+    return (
+      <div>
+        <div onClick={(e)=>this.handleClick(e,1,2)}>hello MyComponent</div>
+      </div>
+    )
+  }
+}
+
+```
+
 
 
