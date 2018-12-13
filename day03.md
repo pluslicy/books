@@ -153,5 +153,54 @@ class MyComponent extends React.Component{
 
 ```
 
+```
+<MyDiv onClick={this.handleClick}>
+
+class MyDiv extends Component{
+    handleClick = (event)=>{
+        //this 箭头函数机制保证this指向当前组件实例对象 this.props;this.state;this.handleClick
+        // event 为事件对象 preventDefault cancelBubble 
+    }
+}
+
+<MyDiv onClick={this.handleClick.bind(this,1,2,3)}>
+
+class MyDiv extends Component{
+    handleClick = (a,b,c,event)=>{
+        //this 箭头函数机制保证this指向当前组件实例对象 this.props;this.state;this.handleClick
+        // event 为事件对象 preventDefault cancelBubble 
+    }
+}
+
+
+<MyDiv onClick={(e)=>{this.handleClick(1,2,3,e)}}>
+
+class MyDiv extends Component{
+    handleClick = (a,b,c,event)=>{
+        //this 箭头函数机制保证this指向当前组件实例对象 this.props;this.state;this.handleClick
+        // event 为事件对象 preventDefault cancelBubble 
+    }
+}
+
+```
+
+[课堂视频](https://pan.baidu.com/s/1oLUJ-CPSgNYx0NTfgzvKdA) 提取码: 7pk5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

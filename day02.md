@@ -241,7 +241,7 @@ const element = (
 
 
 
-### 3.2组件渲
+### 3.2组件渲染
 
 通过函数ReactDOM.render() 将Weblcome组件渲染到id为root的元素上
 
