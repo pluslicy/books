@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [前端入门](prepare.md)
 * React基础
     * [day01入门与介绍](day01.md)
     * [day02JSX与组件](day02.md)
