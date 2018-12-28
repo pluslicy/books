@@ -57,17 +57,26 @@
 为了开发高效，我们使用ES6，为了使得这样的代码能够运行在浏览器上我们需要借助一些列眼花缭乱的技术：
 
 1. ES6 （javascript的高级版本，包含了类，承诺，异步函数等等新JS功能）
+
 2. babel (用于将ES6转换为ES5)
+
 3. webpack (构建工具，babel可以集成到webpack中)
+
 4. sass (新一代css开发技术，可以在sass中快速构建css代码。当然浏览器不支持，可以使用webpack中的插件进行转化)​	
+
 
 这个阶段也最为困难，一般学习 Vue系列框架或者 react系列框架或者Angular系列框架。这三套系列框架都提供了核心技术，路由解决方案，状态管理解决方案，hybird app解决方案，常用组件库。一般企业级开发要求 react/vue/angular熟悉其中之一即可。这里我重点介绍前两套学习路线
 
 1. Vue (vue的核心)
+
 2. VueRouter (路由管理)
+
 3. vuex (数据状态管理)
+
 4. Elementui（饿了么团队开源出来的VUE组件库）
+
 5. weex （阿里巴巴团队开源出来的byhird app解决方案，用于利用vue技术开发手机APP）
+
 
 实际上到此为止，基本上可以满足大部分企业的用人需求。那么还有一些大型公司使用react,作为初学者我们只需要在vue/react中选择一个体系学习即可。下面谈谈react，他的学习难度要大一些：
 
@@ -78,6 +87,8 @@
 5. redux-thunk/redux-saga (redux的封装，底层redux使用起来相对复杂一些，这两个框架选择其一即可)
 6. react-native （与weex类似，用于开发手机APP，但是效率会更高一些）
 7. react-electron (与electron配合开发跨平台桌面版应用程序)
+
+
 
 - 第四阶段 【微信端开发】
 
@@ -96,4 +107,70 @@
 2. Express (mvc框架，类似于Java中的servlet)
 3. Mysql (这里面的Mysql指的是nodeJS中的mysql框架，当然你要提前学习Mysql这个数据库)
 
-差不多喽，如果你对技术的追求无止境，那么这时候看看Java学习真正的服务端开发也不是一个什么不好的事情。然后看看Python,比如我就喜欢用Python来读取一些传感器数据，来驱动一个硬件来玩玩。
+差不多喽，如果你对技术的追求无止境，那么这时候看看Java学习真正的服务端开发也不是一个什么不好的事情。然后看看Python,比如我就喜欢用Python来读取一些传感器数据，来驱动一个硬件来
+
+## 2. JavaEE企业级开发
+
+传统的JavaEE企业级开发是Java为主，动态页面一般也由Java工程师使用JSP技术来完成。但是这种开发方式有很大的弊端，后台工程师需要考虑页面布局，样式调整甚至于页面优化等这些前端技术从而导致后台工程师无法真正的集中精力完成后台开发（比如数据库操作，文件操作，excel操作等），此外，这种开发效率也十分低下，后期维护成本也比较高。所以越来越多的公司采用前后台完全分离的方式进行开发，在这种模式下，后台工程师只需要集中精力处理后台业务即可，通过swagger暴露接口给前端。那么前端集中精力处理页面以及用户体验，通过swagger来查看后台暴露给出来的接口，然后通过ajax来访问这些接口获取数据，然后将这些数据动态显示到页面中。
+
+那么如何学好Java技术呢？
+
+- 第一阶段【Java基础】
+
+1. Linux （腾讯云注册学生账号，购买腾讯云服务器，安装ubuntu镜像）
+
+2. CoreJava （在linux操作系统下完成CoreJava学习，语法, 数组，面向对象，集合，线程，IO，异常，网络编程，Java8新特性）
+
+3. XML （掌握Java操作XML以及解析XML的技术 SAX、DOM4J）
+
+4. 数据库ORACLE/MYSQL （掌握DDL 和 DML即数据库定义语言和数据库修改语言；可以通过终端来操作数据库）
+
+5. JDBC （数据库连接技术）
+
+
+- 第二阶段【JavaWeb基础】
+
+1. Html /css （简单的学习html标签和CSS选择器及样式，明确其语法即可）
+
+2. Servlet/jsp (这个是Javaweb基础，务必掌握 http协议，request ,response原理及api，session cookie原理及应用)
+
+3. 企业级开发工具应用（重点掌握maven/git/github）
+
+
+- 第三阶段【企业级框架应用】
+
+1. spring 基础（掌握依赖注入，面向切面编程基础技术）
+
+2. springboot (掌握springboot创建架构项目的方式)
+
+3. springmvc （基于servlet的mvc框架）
+
+4. mybatis (JDBC框架)
+
+5. mybatis generator (根据数据库快速生成代码的框架)
+
+6. spring security (spring的认证框架)
+
+7. swagger (API框架，可以迅速产生swagger文档，方便前后台数据对接)
+
+
+- 第四阶段【微服务架构】
+
+1. fastdfs (分布式图片存储)
+2. OAuth2 （身份认证框架）
+3. rabbitmq （消息队列）
+4. redis (数据缓存技术)
+5. springcloud 微服务总体解决方案
+
+
+
+
+
+
+
+
+
+
+
+
+
