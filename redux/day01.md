@@ -180,6 +180,8 @@ $ yarn add redux react-redux
 
 2. 细节
 
+
+
    - src/store/student/index.js
 
      ```javascript
