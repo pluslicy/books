@@ -303,7 +303,7 @@ $ yarn add redux react-redux
 
 [demo](https://github.com/pluslicy/redux.git)
 
-
+[视频地址](https://pan.baidu.com/s/1rNC-001wCzUHsvhAL8ve2w)提取码: 7vd1 
 
 
 
