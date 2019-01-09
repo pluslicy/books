@@ -76,3 +76,7 @@ hw.next()	// { value: undefined, done: true }
 （3）如果没有再遇到新的`yield`表达式，就一直运行到函数结束，直到`return`语句为止，并将`return`语句后面的表达式的值，作为返回的对象的`value`属性值。
 
 （4）如果该函数没有`return`语句，则返回的对象的`value`属性值为`undefined`。
+
+[demo](https://github.com/pluslicy/redux.git)
+
+[视频资料](https://pan.baidu.com/s/1w_BiQqSC0z3F2_ARlOwd9A)提取码: 81fb
