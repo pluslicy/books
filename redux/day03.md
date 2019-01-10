@@ -92,3 +92,7 @@ constructor(props){
 **call(fn, ...args)** 创建一个Effect description指导中间件调用fn并且传递args，类似于action generator。fn为generator函数或普通函数
 
 **put(action)** dispatch一个action，只能是同步请求
+
+[demo](https://github.com/pluslicy/redux.git)
+
+[视频资料](https://pan.baidu.com/s/1Culg88M5OugL4Shk5a7wjw)提取码: byfr 
