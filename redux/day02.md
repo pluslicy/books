@@ -1,4 +1,4 @@
-# Redux-thunk
+# Redux-thunk 简介
 
 ### 1. 介绍
 
@@ -76,6 +76,28 @@ hw.next()	// { value: undefined, done: true }
 （3）如果没有再遇到新的`yield`表达式，就一直运行到函数结束，直到`return`语句为止，并将`return`语句后面的表达式的值，作为返回的对象的`value`属性值。
 
 （4）如果该函数没有`return`语句，则返回的对象的`value`属性值为`undefined`。
+
+```javascript
+var axios = require('axios');
+var co = require('co');
+
+// ajax
+function loadStudent(){
+    return axios.get('http://134.175.154.93:8099/index/findAllCategory');
+}
+//异步函数定义
+function* load(){
+    let result1 = yield loadStudent();
+    let result2 = yield loadStudent();
+    console.log(result1.data);    
+    console.log(result2.data);
+}
+
+// 自动执行异步函数
+co(load())
+```
+
+
 
 [demo](https://github.com/pluslicy/redux.git)
 
